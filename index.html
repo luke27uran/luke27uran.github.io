@@ -11,14 +11,7 @@
              background-image:url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmh6aXhicmpnZDh2OGFkZGM1bXdveWZsM2J0cGRyOHJnMjA3azlibiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H28dEOCodna9MxkfaJ/giphy.gif");
              background-size: cover;
          }
-         .cat{
-             display:block;
-             height:95%;
-              position: absolute;
-           top: 100%;
-           left: 50%;
-           transform: translate(-50%, -100%);
-         }
+         
 
          #name {
       font-family: "Caveat", cursive;
@@ -47,16 +40,29 @@
              }
          }
 
-        @media only screen and (max-width: 600px) {
-            .cat{
+        /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  .cat{
              display:block;
-             width:90%;
+             height:95%;
               position: absolute;
            top: 100%;
            left: 50%;
            transform: translate(-50%, -100%);
          }
-        }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  .cat{
+             display:block;
+             width:80%;
+              position: absolute;
+           top: 100%;
+           left: 50%;
+           transform: translate(-50%, -100%);
+         }
+}
     </style>
   </head>
   <body>
